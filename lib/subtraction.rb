@@ -1,6 +1,10 @@
 def subtractionGenerator(opts = {})
   num1 = rand(opts[:max].to_i)
-  num2 = rand(num1)
+  if num1 == 0
+    num2 = 0
+  else
+    num2 = rand(num1)
+  end
   { :num1 => num1, :num2 => num2 }.to_json
 end
 
