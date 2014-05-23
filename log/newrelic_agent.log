@@ -1,0 +1,38 @@
+# Logfile created on 2014-05-23 02:04:01 -0400 by logger.rb/41954
+[05/23/14 02:04:01 -0400 localhost (45264)] INFO : Starting the New Relic agent in "development" environment.
+[05/23/14 02:04:01 -0400 localhost (45264)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[05/23/14 02:04:01 -0400 localhost (45264)] INFO : Reading configuration from newrelic.yml
+[05/23/14 02:04:01 -0400 localhost (45264)] ERROR : No application name configured.
+[05/23/14 02:04:01 -0400 localhost (45264)] ERROR : The Agent cannot start without at least one. Please check your 
+[05/23/14 02:04:01 -0400 localhost (45264)] ERROR : newrelic.yml and ensure that it is valid and has at least one 
+[05/23/14 02:04:01 -0400 localhost (45264)] ERROR : value set for app_name in the development 
+[05/23/14 02:04:01 -0400 localhost (45264)] ERROR : environment.
+[05/23/14 02:04:01 -0400 localhost (45264)] INFO : Installing Net instrumentation
+[05/23/14 02:04:01 -0400 localhost (45264)] INFO : Installing Sinatra instrumentation
+[05/23/14 02:04:01 -0400 localhost (45264)] INFO : Installing deferred Rack instrumentation
+[05/23/14 02:04:01 -0400 localhost (45264)] INFO : Finished instrumentation
+[05/23/14 02:04:13 -0400 localhost (45302)] INFO : Starting the New Relic agent in "development" environment.
+[05/23/14 02:04:13 -0400 localhost (45302)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[05/23/14 02:04:13 -0400 localhost (45302)] INFO : Reading configuration from newrelic.yml
+[05/23/14 02:04:13 -0400 localhost (45302)] ERROR : No application name configured.
+[05/23/14 02:04:13 -0400 localhost (45302)] ERROR : The Agent cannot start without at least one. Please check your 
+[05/23/14 02:04:13 -0400 localhost (45302)] ERROR : newrelic.yml and ensure that it is valid and has at least one 
+[05/23/14 02:04:13 -0400 localhost (45302)] ERROR : value set for app_name in the development 
+[05/23/14 02:04:13 -0400 localhost (45302)] ERROR : environment.
+[05/23/14 02:04:13 -0400 localhost (45302)] INFO : Installing Net instrumentation
+[05/23/14 02:04:13 -0400 localhost (45302)] INFO : Installing Sinatra instrumentation
+[05/23/14 02:04:13 -0400 localhost (45302)] INFO : Installing deferred Rack instrumentation
+[05/23/14 02:04:13 -0400 localhost (45302)] INFO : Finished instrumentation
+[05/23/14 02:05:04 -0400 localhost (45332)] INFO : Starting the New Relic agent in "development" environment.
+[05/23/14 02:05:04 -0400 localhost (45332)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[05/23/14 02:05:04 -0400 localhost (45332)] INFO : Reading configuration from newrelic.yml
+[05/23/14 02:05:04 -0400 localhost (45332)] ERROR : No application name configured.
+[05/23/14 02:05:04 -0400 localhost (45332)] ERROR : The Agent cannot start without at least one. Please check your 
+[05/23/14 02:05:04 -0400 localhost (45332)] ERROR : newrelic.yml and ensure that it is valid and has at least one 
+[05/23/14 02:05:04 -0400 localhost (45332)] ERROR : value set for app_name in the development 
+[05/23/14 02:05:04 -0400 localhost (45332)] ERROR : environment.
+[05/23/14 02:05:04 -0400 localhost (45332)] INFO : Installing Net instrumentation
+[05/23/14 02:05:04 -0400 localhost (45332)] INFO : Installing Sinatra instrumentation
+[05/23/14 02:05:04 -0400 localhost (45332)] INFO : Installing deferred Rack instrumentation
+[05/23/14 02:05:04 -0400 localhost (45332)] INFO : Finished instrumentation
+[05/23/14 02:05:04 -0400 localhost (45332)] INFO : Doing deferred dependency-detection before Rack startup
