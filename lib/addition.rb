@@ -2,7 +2,7 @@ class Addition
   attr_accessor :num1, :num2, :answer
 
   def initialize(opts = {})
-    total = setTotal(opts[:max])
+    total = set_total(opts[:max])
     self.num1 = opts[:num1] || rand(total)
     self.num2 = opts[:num2] || total - self.num1
     self.answer = opts[:answer]
@@ -12,8 +12,8 @@ class Addition
     self.num1.to_i + self.num2.to_i == self.answer.to_i
   end
 
-  def setTotal(value = 10)
-    total = rand(value.to_i - 1) + 1
+  def set_total(value = 10)
+    rand(value.to_i - 1) + 1
   end
 
   def to_h
@@ -22,21 +22,6 @@ class Addition
 
   def to_json
     self.to_h.to_json
-  end
-end
-
-def additionGenerator(opts = {})
-  total = rand(opts[:max].to_i)
-  num1 = rand(total)
-  num2 = total - num1
-  { :num1 => num1, :num2 => num2 }.to_json
-end
-
-def additionChecker(opts = {})
-  if params[:num1].to_i + params[:num2].to_i == params[:answer].to_i
-    returnCorrect
-  else
-    returnIncorrect
   end
 end
 
