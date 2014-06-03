@@ -1,25 +1,37 @@
-def subtractionGenerator(opts = {})
-  num1 = rand(opts[:max].to_i)
-  if num1 == 0
-    num2 = 0
-  else
-    num2 = rand(num1)
-  end
-  { :num1 => num1, :num2 => num2 }.to_json
-end
+class Subtraction
+  attr_accessor :num1, :num2, :answer
 
-def subtractionChecker(opts = {})
-  if opts[:num1].to_i - opts[:num2].to_i == opts[:answer].to_i
-    returnCorrect
-  else
-    returnIncorrect
+  def initialize(opts = {})
+    self.num1 = opts[:num1] || rand(opts[:max].to_i)
+    self.num2 = opts[:num2] || set_num2(self.num1)
+    self.answer = opts[:answer]
+  end
+
+  def correct?
+    self.num1.to_i - self.num2.to_i == self.answer.to_i
+  end
+
+  def set_num2(num1)
+    if num1 == 0
+      0
+    else
+      rand(num1)
+    end
+  end
+
+  def to_h
+    { num1: self.num1, num2: self.num2, answer: self.answer }
+  end
+
+  def to_json
+    self.to_h.to_json
   end
 end
 
 post '/subtraction.json' do
-  subtractionGenerator(params)
+  Subtraction.new(params).to_json
 end
 
 post '/subtractionchecker.json' do
-  subtractionChecker(params)
+  {correct: Subtraction.new(params).correct?}.to_json
 end
