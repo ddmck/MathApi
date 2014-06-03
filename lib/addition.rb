@@ -45,17 +45,9 @@ def additionChecker(opts = {})
 end
 
 post '/addition.json' do
-  additionGenerator(params)
-end
-
-post '/additionchecker.json' do
-  additionChecker(params)
-end
-
-post '/additionnew.json' do
   Addition.new(params).to_json
 end
 
-post '/additioncheckernew.json' do
+post '/additionchecker.json' do
   {correct: Addition.new(params).correct?}.to_json
 end
