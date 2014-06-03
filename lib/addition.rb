@@ -9,11 +9,7 @@ class Addition
   end
 
   def correct?
-    if self.num1.to_i + self.num2.to_i == self.answer.to_i
-      true
-    else
-      false
-    end
+    self.num1.to_i + self.num2.to_i == self.answer.to_i
   end
 
   def setTotal(value = 10)
