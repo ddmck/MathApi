@@ -2,13 +2,17 @@ class Subtraction
   attr_accessor :num1, :num2, :answer
 
   def initialize(opts = {})
-    self.num1 = opts[:num1] || rand(opts[:max].to_i)
+    self.num1 = opts[:num1] || set_num1(opts[:max])
     self.num2 = opts[:num2] || set_num2(self.num1)
     self.answer = opts[:answer]
   end
 
   def correct?
     self.num1.to_i - self.num2.to_i == self.answer.to_i
+  end
+
+  def set_num1(value = 10)
+    rand(value.to_i - 1) + 1
   end
 
   def set_num2(num1)
